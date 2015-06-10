@@ -375,7 +375,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
      */
     public function pluck($value, $key = null)
     {
-        return new static(Arr::pluck($this->items, $value, $key));
+        return Arr::pluck($this->items, $value, $key);
     }
 
     /**
